@@ -1,0 +1,203 @@
+main {
+    color: white;
+}
+
+.info-container {
+    margin: auto;
+    padding: 120px 0 60px;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+    width: 1233px;
+    height: 750px;
+    text-align: left;
+}
+
+.info-container2 {
+    width: 1233px;
+    height: 750px;
+}
+
+.about-title {
+    width: 100%;
+}
+
+.about-content {
+    width: 100%;
+    display: flex;
+}
+
+.about-left {
+    display: flex;
+    max-width: 40%;
+}
+
+.about-mail {
+    display: flex;
+    vertical-align: top;
+    margin-right: 10%;
+}
+
+.about-socials {
+    margin-left: 50px;
+
+    a {
+        display: block;
+    }
+
+}
+
+.about-social {
+    padding-top: 20%;
+}
+
+.about-right {
+    display: flex;
+    max-width: 70%;
+    margin-left: 10%;
+}
+
+.about-experience {
+    margin-top: 10%;
+    &:hover .experience-content {
+        opacity: .3;
+    }
+
+    & .experience-content {
+        display: flex;
+        text-decoration:none;
+        transition: all 0.3s ease;
+        &:hover{
+            color:#fff;
+            opacity:1;
+            transform:translateX(.5rem)
+        }
+    }
+}
+
+.experience-date {
+    width: 150px;
+    padding-right: 20px;
+}
+
+.experience-company {
+    display: flex;
+    margin-left: 50px;
+    width: 200px;
+}
+
+.experience-role {
+    display: flex;
+    margin-left: 50px;
+}
+
+.line {
+    height: 2px;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    animation: glow 9s linear infinite;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.line2 {
+    height: 2px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
+}
+
+@keyframes glow {
+    from {
+        background-position: -500%;
+    }
+    to {
+        background-position: 500%;
+    }
+}
+
+.navbar {
+    margin-bottom: 70px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    flex-wrap: wrap;
+    float: right;
+
+    li {
+        margin-left: .75em;
+        margin-right: .75em;
+        padding: 5px 10px;
+    }
+
+    &:hover {
+        a {
+            color: #343434;
+            &:hover {
+                color: white;
+                box-shadow: 0 2px 0 0 currentcolor;
+            }
+        }
+    }
+}
+
+.navbar a {
+    font-size: 1.2em;
+    color: white;
+    letter-spacing: .1em;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.project-canvas {
+    position: fixed;
+    max-height: 300px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.project-image {
+    opacity: 0;
+    position: absolute;
+    top: -100%;
+    pointer-events: none;
+    user-select: none;
+}
+
+section {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    padding-top: 6vh;
+    padding-bottom: 5vw;
+
+    .project {
+        width: 100%;
+        height: 100%;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            justify-content: space-between;
+
+            li {
+                position: relative;
+                border-bottom: 1px solid #ffffff;
+                font-size: 2.5rem;
+                cursor: pointer;
+            }
+        }
+    }
+}
