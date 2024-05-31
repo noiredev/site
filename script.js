@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
         links = [...document.querySelectorAll('.select')],
         imagesUrl = [
             'https://w.wallhaven.cc/full/we/wallhaven-werowr.png',
-            'https://i.postimg.cc/5Nz69CsG/frank-eiffert-nk2svzj-SDX4-unsplash.jpg',
+            'https://w.wallhaven.cc/full/2y/wallhaven-2yjp6x.png',
             'https://w.wallhaven.cc/full/85/wallhaven-856dlk.png',
             'https://i.postimg.cc/JhFHrDyd/laptop.jpg',
             'https://i.imgur.com/2n33rEn.gif',
