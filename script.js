@@ -100,9 +100,9 @@ document.addEventListener("DOMContentLoaded", () => {
         ctx = canvas2.getContext('2d'),
         links = [...document.querySelectorAll('.select')],
         imagesUrl = [
-            'https://i.postimg.cc/4N1jpc7s/jon-tyson-Hu-RTqa-EMD4-I-unsplash.jpg',
+            'https://w.wallhaven.cc/full/we/wallhaven-werowr.png',
             'https://i.postimg.cc/5Nz69CsG/frank-eiffert-nk2svzj-SDX4-unsplash.jpg',
-            'https://i.postimg.cc/7PsnWVnS/bp-miller-HAOy-I6-Z57s-I-unsplash.jpg',
+            'https://w.wallhaven.cc/full/85/wallhaven-856dlk.png',
             'https://i.postimg.cc/JhFHrDyd/laptop.jpg',
             'https://i.imgur.com/2n33rEn.gif',
             'https://i.pinimg.com/originals/8b/b0/fe/8bb0fe9732cbe45f219965d9d339ca1b.jpg',
