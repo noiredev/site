@@ -1,0 +1,231 @@
+:root {
+    --main-dark: #010100;
+    --purple: #782C78;
+    --purple-selected: #D850D8;
+    --purple-shadow: #510051;
+    --purple-background: #100010;
+    --purple: #694E7C;
+    --purple-selected: #9b50d8;
+    --purple-shadow: #3d0051;
+    --purple-edge: #211131;
+    --purple-background: #080010;
+    --main-light: #EAE7DE;
+
+    --main-dark2: #111111;
+    --transparent-dark: #111111fb;
+    --second-dark: #181818;
+    --grey: #181818;
+    --purple: #694E7C;
+    --orange: #c58c65;
+}
+
+/*
+@font-face {
+    font-family: Georgia,serif;
+    font-family: "monkey";
+    src: url("fonts/talk-to-three-headed-monkey.ttf");
+}
+*/
+
+*::selection {
+    color: var(--main-dark);
+    background-color: var(--purple);
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--pruple);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--main-light);
+}
+
+body {    
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: "monkey";
+    font-size: 18px;
+    word-break: break-word;
+    
+    background-color: var(--main-dark);
+    color: var(--main-light);
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.5)), url("https://i.pinimg.com/originals/e6/bb/f4/e6bbf4fedbbeb06fb30994433830b59d.gif");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+a {
+    color: var(--purple);
+}
+
+a:hover {
+    color: var(--main-light);
+    background-color: var(--purple);
+}
+
+.screen {
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    width: 70vw;
+    max-width: 1100px;
+    min-height: 655px;
+    border: ridge 16px var(--purple-edge);
+    background-color: var(--main-dark);
+}
+
+.about-screen {
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    width: 70vw;
+    max-width: 1100px;
+    border: ridge 16px var(--purple-edge);
+    background-color: var(--main-dark);
+}
+
+.main-window{  
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 90vw;
+    max-width: 1000px;
+    max-height: 90vh;
+    
+    padding: 0px 20px;
+    border: solid 3px var(--main-light);
+    background-color: var(--transparent-dark);
+
+    overflow-y: scroll;
+}
+
+h1 {
+    padding: 30px;
+    padding-bottom: 10px;
+}
+
+p {
+    padding: 30px;
+    padding-top: 10px;
+}
+
+.titleimg {
+    width: 100%;
+}
+
+.links {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+
+    padding: 40px 0px;
+    background-color: var(--main-dark);
+}
+
+.links > a {
+    font-size: 2.4em;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-shadow: 2px 2px var(--purple-shadow);
+
+    background-color: var(--purple-background);
+    color: var(--purple);
+
+    padding: 9px 25px 18px 25px;
+    border: solid 2px var(--purple-background);
+}
+
+.links > a:hover {
+    color: var(--purple-selected);
+    border: solid 2px var(--purple-selected);
+}
+
+body::before { 
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(20, 20, 20, 0) 66%, rgba(0, 0, 0, 0.20) 33%);
+    background-size: 100% 3px;
+    z-index: 9999;
+    pointer-events: none;
+    
+    animation: scanlines-anim 0.7s linear infinite;
+}
+
+@keyframes scanlines-anim {
+    0% {
+		background-position: 0px 0px;
+	}
+	100% {
+        background-position: 0px 9px;
+	}
+}
+
+@media only screen and (orientation: portrait) {
+    body::before{
+        background-size: 100% 4px;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    .screen {
+        width: calc(100% - 32px);
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    .links {
+        flex-flow: column nowrap;
+        gap: 40px;
+        padding: 80px 0px;
+    }
+
+    .links > a {
+        font-size: 3em;
+        margin: 0px 50px;
+    }
+
+}
+
+h1, h2, h3, h4 {
+    font-family: "dos";
+    margin: 8px 0px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2.75em;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ul, ol {
+    margin-left: 60px;
+}
+
+ul ol, ol ul, ol.noindent, ul.noindent {
+    margin-left: 0px;
+}
+
+ul ol, ol ul, ol.halfindent, ul.halfindent {
+    margin-left: 30px;
+}

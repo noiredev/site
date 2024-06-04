@@ -10,6 +10,8 @@ body, html {
     /*background-color: #c2d4f2; /* white color*/
     /*background-color: #f0f0f0;*/
     background-color: #000000;
+    font-family: Georgia,serif;
+    color: #eae7de;
 }
 
 *, *:after, *:before {
@@ -26,8 +28,9 @@ a, a:visited, a:hover, a:active {
 ::selection {
     /*background: #b74687;
      * #c3a1c4
+     background: #c3a1c4;
      * #4d6c84*/
-    background: #c3a1c4;
+    background: #694e7c;
 }
 
 canvas {
@@ -50,7 +53,7 @@ nav {
     width: 100%;
     margin-top: 1%;
     margin-left: 1%;
-    color: white;
+    color: #eae7de;
 }
 
 .mid-container {
@@ -109,7 +112,6 @@ h3 {
     font-family: Lora, serif;
     font-size: 2em;
     letter-spacing: .1em;
-    color: white;
     max-height: 2vh;
 }
 
@@ -196,7 +198,7 @@ h3 {
 
 @keyframes fill-text-white {
     to {
-        color: white;
+        color: #eae7de;
     }
 }
 
@@ -209,7 +211,32 @@ main {
         margin-top: 25px;
 
         &::before {
-            background: #FF4081;
+            background-color: #694e7c;
         }
     }
+}
+
+@media only screen and (orientation: portrait){
+    main {
+        .mid-container {
+        }
+
+        h3 {
+            margin-left: 20%;
+        }
+    }
+}
+
+@media only screen and (orientation: portrait){
+    .mid-container {
+        width: calc(100% - 32px);
+    }
+}
+
+@media only screen and (orientation: portrait){
+    .bottom-text > ul {
+        font-size: 1.65em;
+        margin: 0px 50px;
+    }
+
 }

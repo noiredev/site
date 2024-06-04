@@ -201,3 +201,26 @@ section {
         }
     }
 }
+
+@media only screen and (orientation: portrait){
+    .about-page {
+        width: calc(100% - 22px);
+    }
+
+    
+}
+
+@media only screen and (orientation: portrait){
+    .navbar {
+        flex-flow: column nowrap;
+        margin-right: 70%;
+    }
+
+    .navbar > ul {
+        margin-right: 20%;
+        font-size: 0.7em;
+        margin: 0px 50px;
+    }
+
+}
+
